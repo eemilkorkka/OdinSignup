@@ -45,6 +45,7 @@ body {
     background-color: rgba(128, 128, 128, 0.065);
     grid-row: 1 / 4;
     grid-column: 4 / 9;
+    overflow: hidden;
 }
 
 .introduction {
@@ -68,9 +69,74 @@ h2 span {
     grid-row: 4 / 7;
     grid-column: 4 / 9;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
 }
 
 form {
     display: flex;
-    background-color: red;
+    margin-left: 50px;
+}
+
+.left-div label, .right-div label {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.821);
+}
+
+.left-div input, .right-div input {
+    padding: 5px;
+    width: 230px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    outline: none;
+}
+
+.left-div input:focus, .right-div input:focus {
+    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.password-div input:invalid, .confirm-password-div input:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+.email-div, .password-div {
+    margin-top: 25px;
+}
+
+.phone-num-div, .confirm-password-div {
+    margin-top: 25px;
+}
+
+.right-div {
+    margin-left: 100px;
+}
+
+.item4 {
+    grid-column: 4 / 9;
+    grid-row: 7 / 10;
+}
+
+.signup-button {
+    margin-left: 50px;
+    margin-top: 40px;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #596D48;
+}
+
+.item4 p {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item4 span {
+    color: #596D48;
+    font-weight: bold;
 }
